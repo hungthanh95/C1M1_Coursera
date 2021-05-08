@@ -27,6 +27,9 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
+/* Declare of functions */
+void swap(unsigned char *x, unsigned char *y);
+
 
 void main() {
 
@@ -37,12 +40,44 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
     /* Statistics and Printing Functions Go Here */
-    printf("Before sorting the statistics:\n");
-    print_array(test, SIZE);
-    sort_array(test, SIZE);
-    printf("After sorting the statistics:\n");
-    print_array(test, SIZE);
-    print_statistics(test, SIZE);
+
 }
 
 /* Add other Implementation File Code Here */
+void print_statistics(unsigned char array[], unsigned int length) {
+
+}
+
+
+void print_array(unsigned char * array, unsigned int length) {
+
+}
+
+
+unsigned char find_median(unsigned char array[], unsigned int length) {
+	return 0;
+}
+
+
+unsigned char find_mean(unsigned char array[], unsigned int length) {
+	return 0;
+}
+
+
+unsigned char find_maximum(unsigned char array[], unsigned int length) {
+	return 0;
+}
+
+unsigned char find_minimum(unsigned char array[], unsigned int length) {
+	return 0;
+}
+
+
+void sort_array(unsigned char array[], unsigned int length) {
+
+}
+
+
+void swap(unsigned char *x, unsigned char *y) {
+
+}
