@@ -49,6 +49,7 @@ void main() {
 }
 
 /* Add other Implementation File Code Here */
+// Only using for sorted array
 void print_statistics(unsigned char array[], unsigned int length) {
     // Calculate median of array
     printf("Median: %d\n", find_median(array, length));
@@ -72,7 +73,7 @@ void print_array(unsigned char * array, unsigned int length) {
     printf("\n");
 }
 
-
+// Only using for sorted array
 unsigned char find_median(unsigned char array[], unsigned int length) {
     unsigned char median = 0;
     if (length % 2 == 0) {
@@ -83,7 +84,7 @@ unsigned char find_median(unsigned char array[], unsigned int length) {
     return median;
 }
 
-
+// Only using for sorted array
 unsigned char find_mean(unsigned char array[], unsigned int length) {
     unsigned int sum = 0;
     for (int i = 0; i < length; i++) {
