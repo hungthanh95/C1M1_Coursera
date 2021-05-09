@@ -87,6 +87,8 @@ unsigned char find_median(unsigned char array[], unsigned int length) {
 // Only using for sorted array
 unsigned char find_mean(unsigned char array[], unsigned int length) {
     unsigned int sum = 0;
+    if (length == 0) return 0;
+
     for (int i = 0; i < length; i++) {
         sum += array[i];
     }
@@ -95,6 +97,8 @@ unsigned char find_mean(unsigned char array[], unsigned int length) {
 
 
 unsigned char find_maximum(unsigned char array[], unsigned int length) {
+    if (length == 0) return 0;
+
     int maximum = array[0];
     for (size_t i = 1; i < length; i++) {
         if (maximum < array[i]) {
@@ -105,6 +109,8 @@ unsigned char find_maximum(unsigned char array[], unsigned int length) {
 }
 
 unsigned char find_minimum(unsigned char array[], unsigned int length) {
+    if (length == 0) return 0;
+
     int minimum = array[0];
     for (size_t i = 1; i < length; i++) {
         if (minimum > array[i]) {
@@ -116,6 +122,8 @@ unsigned char find_minimum(unsigned char array[], unsigned int length) {
 
 
 void sort_array(unsigned char array[], unsigned int length) {
+    if (length == 0) return ;
+
     int i, j, max_idx;
 
     for (i = 0; i < length - 1; i++) {
